@@ -1,0 +1,69 @@
+#motherboardTitle {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#motherboardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.motherboardList {
+    display: flex;
+    gap: 1rem;
+}
+
+.motherboardImage {
+    background-color: white;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.motherboardImage > img {
+    width: 14.5rem;
+    height: 9.5rem;
+    object-fit: contain;
+}
+
+.motherboardText {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.motherboardName {
+    font-size: 2rem;
+}
+
+.motherboardLink > a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.motherboardLink > a:hover {
+    text-decoration: underline;
+}
+
+#motherboardNotFound {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 48rem) {
+    #motherboardTitle {display: none;}
+    #motherboardContainer {display: none;}
+
+    #motherboardNotFound {display: block;}
+}

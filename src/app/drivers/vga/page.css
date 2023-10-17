@@ -1,0 +1,69 @@
+#vgaTitle {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#vgaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.vgaList {
+    display: flex;
+    gap: 1rem;
+}
+
+.vgaImage {
+    background-color: white;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vgaImage > img {
+    width: 14.5rem;
+    height: 9.5rem;
+    object-fit: contain;
+}
+
+.vgaText {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vgaName {
+    font-size: 2rem;
+}
+
+.vgaLink > a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.vgaLink > a:hover {
+    text-decoration: underline;
+}
+
+#vgaNotFound {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 48rem) {
+    #vgaTitle {display: none;}
+    #vgaContainer {display: none;}
+
+    #vgaNotFound {display: block;}
+}

@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.space {height: 10rem;}
+
+.outerDiv {
+  background-color: #03424B;
+  padding: 0 1rem;
+}
+
+.outerDiv > div {
+  background-color: #007586;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: calc(100vh - 4rem - 13rem - 4rem);
+}
+
+p {margin: 0;}
+
+
+header {
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 120, 136);
+}
+
+header > img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+@media (max-width: 48rem) {
+
+  header {height: calc(100vh - 4rem - 3rem);}
+
+
+  .outerDiv > div {
+      padding: 1rem;
+      min-height: calc(100vh - 4rem - 17rem - 2rem);
+  }
+}

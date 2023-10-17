@@ -1,0 +1,63 @@
+.outerDriver {
+    background-color: #03424B;
+    padding: 0 1rem;
+}
+
+.outerDriver > div {
+    background-color: #007586;
+    border-radius: 1rem;
+    padding: 3rem 0;
+}
+
+#driversTitle {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#notFound {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    display: none;
+}
+
+
+#driversCategory {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#driversCategory > div div {
+    width: 15rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#driversCategory img {
+    width: 12rem;
+    height: 8rem;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+#driversCategory img:hover {
+    width: 14.5rem;
+    height: 9.5rem;
+}
+
+
+@media (max-width: 48rem) {
+    #driversTitle {display: none;}
+    #driversCategory {display: none;}
+    #notFound {display: block;}
+}

@@ -1,0 +1,194 @@
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.homeNav {
+    background-color: rgb(0, 120, 136);
+}
+
+nav {
+    background-color: rgb(3, 66, 75);
+    color: white;
+}
+nav > div {
+    display: flex;
+    align-items: center;
+}
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.19rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+#hamburger > div {
+    width: 1.2rem;
+    height: 0.15rem;
+    border-radius: 0.1rem;
+    background-color: white;
+}
+nav > div > img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
+#welcomeTextSmallScreen {
+    display: none;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#welcomeTextLargeScreen {
+    display: block;
+    white-space: nowrap;
+}
+
+
+
+
+
+#searchBar {
+    margin-left: 1rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+#searchBar > div {
+    padding: 0.6rem 0.5rem 0.4rem 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem 0 0 0.5rem;
+    cursor: pointer;
+}
+#searchBar > div > img {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+    background-color: white;
+}
+#searchBar > input {
+    width: calc(100% - 3rem);
+    max-width: 20rem;
+    padding: 0.5rem 0;
+    outline: none;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+
+
+
+
+
+#links {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+#links > .link {
+    color: white;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+#links > .link > div {
+    height: 0.1rem;
+    border-radius: 0.05rem;
+    background-color: white;
+    transition: 0.4s;
+}
+
+#links > .link:hover > div {width: 100%;}
+
+#samePage {width: 100%;}
+#differentPage {width: 0;}
+
+
+
+#darkBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+.backgroundClicked {
+    right: 0;
+    bottom: 0;
+}
+#popUpNav {
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(3, 66, 75);
+    z-index: 1;
+    transition: 0.3s;
+}
+#popUpLinks > .link {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(3, 66, 75);
+    color: white;
+    cursor: pointer;
+}
+#popUpLinks > .link:nth-child(1){top: 4rem;}
+#popUpLinks > .link:nth-child(2){top: 8rem;}
+#popUpLinks > .link:nth-child(3){top: 12rem;}
+#closeButton {
+    width: 100%;
+    height: 4rem;
+}
+#closeButton > div {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+#closeButton > div > div {
+    width: 60%;
+    height: 0.2rem;
+    background-color: white;
+    position: absolute;
+    top: calc(1rem - 0.1rem);
+    left: calc((100% - 60%) / 2);
+    border-radius: 0.1rem;
+}
+#closeButton > div > div:nth-child(1){transform: rotate(45deg);}
+#closeButton > div > div:nth-child(2){transform: rotate(-45deg);}
+.popUpNotClicked {display: none;}
+.popUpClicked {display: flex;}
+
+
+
+
+
+@media (max-width: 48rem) {
+
+    
+    #hamburger {display: flex;}
+    nav > div > img {margin: 0.5rem 0;}
+    #links {display: none;}
+    #searchBar {margin: 0 1rem; justify-content: flex-end;}
+
+
+    #welcomeTextSmallScreen {display: flex;}
+    #welcomeTextLargeScreen {display: none;}
+
+
+
+}
